@@ -4,13 +4,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "upload": "aws s3 sync ./data/ s3://test-seir-norrichs-image2"
+    "upload": "aws s3 sync ./data/ s3://test-seir-norrichs-image2",
+    "scrape": "node ./scripts/scraper.js"
   },
   "author": "",
   "license": "ISC",
   "keywords": [],
   "description": "",
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "puppeteer": "^10.0.0"
   }
 }
