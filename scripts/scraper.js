@@ -1,12 +1,18 @@
+// Global variables and imports
 "use strict";
 
 const puppeteer = require("puppeteer");
 const fetch = require("node-fetch");
 const fs = require("fs");
-const { join } = require("path");
+// const { join } = require("path");   // Deprecated ?
 const {testProductList, productList} = require('./productList.js')
 const imageFolderPath = '../images/'
-// Browser and page instance
+const productPageLinkArray = []
+
+///////////////////////////////////////////////////////////////////////
+// * Initialize puppeteer Browser and page instance
+// * set image request interception behavior
+///////////////////////////////////////////////////////////////////////
 async function instance() {
 	const browser = await puppeteer.launch({
 		headless: false,
@@ -14,14 +20,14 @@ async function instance() {
 
 	const page = await browser.newPage();
 	// * INTERCEPT AND PREVENT IMAGE LOADING
-	// await page.setRequestInterception(true);
-	// page.on("request", (req) => {
-	// 	if (req.resourceType() === "image") {
-	// 		req.abort();
-	// 	} else {
-	// 		req.continue();
-	// 	}
-	// });
+	await page.setRequestInterception(true);
+	page.on("request", (req) => {
+		if (req.resourceType() === "image") {
+			req.abort();
+		} else {
+			req.continue();
+		}
+	});
 	return { page, browser };
 }
 ///////////////////////////////////////////////////////////////////////
@@ -30,18 +36,6 @@ async function instance() {
 ///////////////////////////////////////////////////////////////////////
 async function extractImageLinks(p) {
 	const { page, browser } = await instance();
-
-	// File Name prefix - construct from relevant dynamoDB partition-key
-	// const audience = "women";
-	// const category = "swimwear";
-	// const group = "bikini-sets";
-	// let p = {
-	// 	audience: "women",
-	// 	category: "swimwear",
-	// 	group: "bikini-sets",
-	// 	family: null,
-	// };
-
 	const fileNamePrefix = `${p.audience}_${p.category}_${p.group}`;
 
 	page.on("console", (msg) => {
@@ -54,7 +48,7 @@ async function extractImageLinks(p) {
 		await page.goto(baseURL, { waitUntil: "networkidle0" });
 		await page.waitForSelector("body");
 
-		let {imageArray, productDataArray} = await page.evaluate((fileNamePrefix) => {
+		let {imageArray, productDataArray} = await page.evaluate((fileNamePrefix, p) => {
 			let imageArray = [];
 			let productDataArray = []
 			let collection = document.getElementsByClassName("item-link"); // * See if this is too general
@@ -70,28 +64,31 @@ async function extractImageLinks(p) {
 				console.log("extracted image title: " + title);
 				let fileName0 = fileNamePrefix + "_" + title + "_00.jpg";
 				let fileName1 = fileNamePrefix + "_" + title + "_01.jpg";
+				// let product_family_URL = 
 
 				imageArray.push({ src: src0, filename: fileName0 });
 				imageArray.push({ src: src1, filename: fileName1 });
 				productDataArray.push({
+					name: alt1,
 					images: [fileName0, fileName1],
 					altText: [alt0, alt1],
 					price_sale: 55, 				// TODO change from dummy data to scraped data
 					price: 45.95,					// TODO change from dummy data to scraped data
-					audience: "men",				// TODO change from dummy data to scraped data
-					product_category: "jeans",		// TODO change from dummy data to scraped data
-					product_group: "skinny",		// TODO change from dummy data to scraped data
-					product_family: "trashed",		// TODO change from dummy data to scraped data
-					items: [0],						// TODO change from dummy data to scraped data
+					audience: p.audience,			
+					product_category: p.category,	
+					product_group: p.group,			
+					product_family: alt1,			// TODO change from dummy data to scraped data
+					items: [],						// TODO change from dummy data to scraped data
 					sizes: []						// TODO change from dummy data to scraped data
 				})
+				// productPageLinkArray.push({name: alt1, url: })
 			});
 			return {imageArray, productDataArray} //{imageArray, productDataArray};
-		}, fileNamePrefix);
+		}, fileNamePrefix, p);
 
 		
-		console.log("productData", productDataArray)
-		// console.log("imageLinks", imageLinks);
+		// console.log("productData", productDataArray)
+		// console.log("imageArray", imageArray);
 
 		await browser.close();
 		return {imageArray, productDataArray};
@@ -103,15 +100,15 @@ async function extractImageLinks(p) {
 // * Function to scrape a product_group page
 // @params p | product object: {audience: String, category: String, group: String}
 ///////////////////////////////////////////////////////////////////////
-const scrapeProductPage = async (p) => {
-	console.log("Downloading images...");
-
+const scrapeProductGroupPage = async (p) => {
+	console.log("Downloading images...", p)
 	// Open up a page, load all items, return link, filename, and text data
 	let {imageArray, productDataArray} = await extractImageLinks(p);
 	// console.log("raw image links", rawImageLinks)
 
 	// Remove all the duplicate records from the results array
 	let uniqeImageArray = removeDuplicates(imageArray, "filename");
+	let uniqueDataArray = removeDuplicates(productDataArray, "name")
 	// console.log("unique image links", imageLinks)
 
 	// Loop over unique array, save images to disk
@@ -122,7 +119,7 @@ const scrapeProductPage = async (p) => {
 	});
 
 	// Save product data as json
-	storeData(productDataArray,`../data/${p.audience}_${p.category}_${p.group}.json`)
+	storeData(uniqueDataArray,`../data/${p.audience}_${p.category}_${p.group}.json`)
 
 
 	console.log("Download complete, check the images folder");
@@ -148,7 +145,7 @@ const saveImageToDisk = (url, filename, n) => {
 		.then((res) => {
 			const dest = fs.createWriteStream(filename);
 			res.body.pipe(dest);
-			// console.log(n,"-fetched and wrote to: ", filename)
+			console.log(n,"-fetched and wrote to: ", filename)
 		})
 		.catch((err) => {
 			console.log(err);
@@ -191,10 +188,11 @@ const initLoadSite = async (page, p) => {
 	return loadedURL
 }
 
-
-// Removes duplicates from array of objects
+///////////////////////////////////////////////////////////////////////
+// * Function to remove duplicates from array of objects
 // @param arr | array of objects
 // @param key | key in objects which will be tested for uniqueness
+///////////////////////////////////////////////////////////////////////
 const removeDuplicates = (arr, key) => {
 	return [...new Set(arr.map((obj) => obj[key]))].map((uniqueKey) => {
 		return arr.find((obj) => {
@@ -202,7 +200,10 @@ const removeDuplicates = (arr, key) => {
 		});
 	});
 };
-
+///////////////////////////////////////////////////////////////////////
+// * Main function get list of products to scrape, loop over and 
+//		call scrape function
+///////////////////////////////////////////////////////////////////////
 const scrapeHM = async (productList) => {
 	console.log("Scraping H & M...")
 	let pCount = productList.length
@@ -211,7 +212,7 @@ const scrapeHM = async (productList) => {
 
 	for(let i = 0; i < pCount; i++){
 		console.log(`product ${i}:`, productList[i])
-		let scrapeStatus = await scrapeProductPage(productList[i])
+		let scrapeStatus = await scrapeProductGroupPage(productList[i])
 		console.log(`prouduct${i} - ${scrapeStatus}`)
 
 	}	
