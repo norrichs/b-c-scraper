@@ -8,6 +8,8 @@ const fs = require("fs");
 const {testProductList, productList} = require('./productList.js')
 const imageFolderPath = '../images/'
 const productPageLinkArray = []
+const getImages = true
+const getData = true
 
 ///////////////////////////////////////////////////////////////////////
 // * Initialize puppeteer Browser and page instance
@@ -48,28 +50,36 @@ async function extractImageLinks(p) {
 		await page.goto(baseURL, { waitUntil: "networkidle0" });
 		await page.waitForSelector("body");
 
-		let {imageArray, productDataArray} = await page.evaluate((fileNamePrefix, p) => {
+		let {imageArray, productDataArray, productPageLinkArray} = await page.evaluate((fileNamePrefix, p) => {
 			let imageArray = [];
 			let productDataArray = []
-			let collection = document.getElementsByClassName("item-link"); // * See if this is too general
-			collection.forEach((elem, index) => {
-				let src0 =
-					"https:" + elem.children[0].attributes["data-src"].value;
-				let src1 =
-					"https:" +
-					elem.children[0].attributes["data-altimage"].value;
-				let alt0 = elem.children[0].attributes["alt"].value;
-				let alt1 = elem.children[0].attributes["data-alttext"].value;
+			let productPageLinkArray = []
+			const imageSelector  = 'li.product-item > article.hm-product-item > div.image-container > a.item-link > img.item-image'
+			
+			// Get Nodelist of all Items on page
+			let collection = document.getElementsByClassName("hm-product-item"); // * See if this is too general
+
+
+			// TODO add scrape of color swatch color values
+			// TODO improve collection selector specificity
+			// TODO add child selectors for: price, sale price, hmLink
+
+			collection.forEach((itemArticle, index) => {
+				let itemImage = itemArticle.children[0].children[0].children[0]
+				let src0 = "https:" + itemImage.attributes["data-src"].value;
+				let src1 = "https:" + itemImage.attributes["data-altimage"].value;
+				let alt0 = itemImage.attributes["alt"].value;
+				let alt1 = itemImage.attributes["data-alttext"].value;
 				let title = alt1.replace(/ /g, "-");
 				console.log("extracted image title: " + title);
 				let fileName0 = fileNamePrefix + "_" + title + "_00.jpg";
 				let fileName1 = fileNamePrefix + "_" + title + "_01.jpg";
-				// let product_family_URL = 
+				let product_family_URL = itemArticle.getElementsByClassName('item-link')[0].getAttribute('href')
 
 				imageArray.push({ src: src0, filename: fileName0 });
 				imageArray.push({ src: src1, filename: fileName1 });
 				productDataArray.push({
-					name: alt1,
+					a_c_g: `${p.audience}+${p.category}_${p.group}`,
 					images: [fileName0, fileName1],
 					altText: [alt0, alt1],
 					price_sale: 55, 				// TODO change from dummy data to scraped data
@@ -79,19 +89,24 @@ async function extractImageLinks(p) {
 					product_group: p.group,			
 					product_family: alt1,			// TODO change from dummy data to scraped data
 					items: [],						// TODO change from dummy data to scraped data
-					sizes: []						// TODO change from dummy data to scraped data
+					sizes: [],
+					swatchColors: []						// TODO change from dummy data to scraped data
 				})
-				// productPageLinkArray.push({name: alt1, url: })
+				productPageLinkArray.push({
+					a_c_g: `${p.audience}+${p.category}_${p.group}`,
+					product_family: alt1, 
+					url: product_family_URL})
 			});
-			return {imageArray, productDataArray} //{imageArray, productDataArray};
+			return {imageArray, productDataArray, productPageLinkArray} //{imageArray, productDataArray};
 		}, fileNamePrefix, p);
 
 		
 		// console.log("productData", productDataArray)
 		// console.log("imageArray", imageArray);
+		// console.log(productPageLinkArray)
 
 		await browser.close();
-		return {imageArray, productDataArray};
+		return {imageArray, productDataArray, productPageLinkArray};
 	} catch (err) {
 		console.log(err);
 	}
@@ -103,12 +118,13 @@ async function extractImageLinks(p) {
 const scrapeProductGroupPage = async (p) => {
 	console.log("Downloading images...", p)
 	// Open up a page, load all items, return link, filename, and text data
-	let {imageArray, productDataArray} = await extractImageLinks(p);
+	let {imageArray, productDataArray, productPageLinkArray} = await extractImageLinks(p);
 	// console.log("raw image links", rawImageLinks)
 
 	// Remove all the duplicate records from the results array
 	let uniqeImageArray = removeDuplicates(imageArray, "filename");
 	let uniqueDataArray = removeDuplicates(productDataArray, "name")
+	let uniqueProductPages = removeDuplicates(productPageLinkArray, "product_family")
 	// console.log("unique image links", imageLinks)
 
 	// Loop over unique array, save images to disk
@@ -120,6 +136,7 @@ const scrapeProductGroupPage = async (p) => {
 
 	// Save product data as json
 	storeData(uniqueDataArray,`../data/${p.audience}_${p.category}_${p.group}.json`)
+	storeData(uniqueProductPages, `../data/detail-pages/${p.audience}_${p.category}_${p.group}_links.json`)
 
 
 	console.log("Download complete, check the images folder");
