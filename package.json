@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "upload": "aws s3 sync ./data/ s3://test-seir-norrichs-image2",
+    "sync_group": "aws s3 sync ../images/group/* s3://bc-clone-images/group/",
+    "sync_items": "aws s3 sync ../images/items/* s3://bc-clone-images/items/",
     "scrape": "node ./scripts/scraper.js"
   },
   "author": "",

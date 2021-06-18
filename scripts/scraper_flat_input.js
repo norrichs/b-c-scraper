@@ -5,12 +5,10 @@ const puppeteer = require("puppeteer");
 const fetch = require("node-fetch");
 const fs = require("fs");
 const {testProductList, productList} = require('./productList.js');
-const manifestTree = require('./manifestTree.json')
-const testManifestTree = require('./testManifestTree.json')
 const imageFolderPath = '../images/'
 const productPageLinkArray = []
-const doGetImages = false
-const doGetData = true
+const getImages = true
+const getData = true
 const useTest = true
 
 
@@ -20,14 +18,10 @@ const useTest = true
 ///////////////////////////////////////////////////////////////////////
 async function instance() {
 	const browser = await puppeteer.launch({
-		headless: true,
+		headless: false,
 	});
-	
+
 	const page = await browser.newPage();
-	page.setUserAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4512.0 Safari/537.36")
-	//   Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/92.0.4512.0 Safari/537.36
-	const agentString = await browser.userAgent()
-	console.log('USER AGENT', agentString)
 	// * INTERCEPT AND PREVENT IMAGE LOADING
 	await page.setRequestInterception(true);
 	page.on("request", (req) => {
@@ -54,14 +48,14 @@ async function extractImageLinks(p) {
 
 	try {
 		const baseURL = await initLoadSite(page, p);
-		await page.goto(baseURL, { waitUntil: "networkidle0" , timeout: 0});
+		await page.goto(baseURL, { waitUntil: "networkidle0" });
 		await page.waitForSelector("body");
 
-		let {imageArray, productDataArray, productPageLinkArray} = await page.evaluate((fileNamePrefix, p, doGetImages) => {
+		let {imageArray, productDataArray, productPageLinkArray} = await page.evaluate((fileNamePrefix, p) => {
 			let imageArray = [];
 			let productDataArray = []
 			let productPageLinkArray = []
-
+			const imageSelector  = 'li.product-item > article.hm-product-item > div.image-container > a.item-link > img.item-image'
 			
 			// Get Nodelist of all Items on page
 			let collection = document.getElementsByClassName("hm-product-item"); // * See if this is too general
@@ -72,18 +66,6 @@ async function extractImageLinks(p) {
 			// TODO add child selectors for: price, sale price, hmLink
 
 			collection.forEach((itemArticle, index) => {
-
-				let price = itemArticle.querySelector('span.price.regular').innerText
-				console.log(price.trim())
-				
-				// let salePrice = null
-				// try{
-				// 	salePrice = itemArticle.querySelector('price sale')
-				// }catch(err){
-				// 	console.error('no sale price?', err)
-				// }
-
-
 				let itemImage = itemArticle.children[0].children[0].children[0]
 				let src0 = "https:" + itemImage.attributes["data-src"].value;
 				let src1 = "https:" + itemImage.attributes["data-altimage"].value;
@@ -102,7 +84,7 @@ async function extractImageLinks(p) {
 					images: [fileName0, fileName1],
 					altText: [alt0, alt1],
 					price_sale: 55, 				// TODO change from dummy data to scraped data
-					price: price,					// TODO change from dummy data to scraped data
+					price: 45.95,					// TODO change from dummy data to scraped data
 					audience: p.audience,			
 					product_category: p.category,	
 					product_group: p.group,			
@@ -117,7 +99,7 @@ async function extractImageLinks(p) {
 					url: product_family_URL})
 			});
 			return {imageArray, productDataArray, productPageLinkArray} //{imageArray, productDataArray};
-		}, fileNamePrefix, p, doGetImages);
+		}, fileNamePrefix, p);
 
 		
 		// console.log("productData", productDataArray)
@@ -137,24 +119,21 @@ async function extractImageLinks(p) {
 const scrapeProductGroupPage = async (p) => {
 	console.log("Downloading images...", p)
 	// Open up a page, load all items, return link, filename, and text data
-
 	let {imageArray, productDataArray, productPageLinkArray} = await extractImageLinks(p);
 	// console.log("raw image links", rawImageLinks)
 
 	// Remove all the duplicate records from the results array
+	let uniqeImageArray = removeDuplicates(imageArray, "filename");
 	let uniqueDataArray = removeDuplicates(productDataArray, "product_family")
 	let uniqueProductPages = removeDuplicates(productPageLinkArray, "product_family")
 	// console.log("unique image links", imageLinks)
-	
+
 	// Loop over unique array, save images to disk
-	if(doGetImages){
-		let uniqeImageArray = removeDuplicates(imageArray, "filename");
-		uniqeImageArray.forEach((image, index) => {
-			// console.log("imageLinks image:",image)
-			let filename = imageFolderPath + image.filename;  // TODO sanitize for React routes target in extractImageLinks
-			saveImageToDisk(image.src, filename, index);
-		});
-	}
+	uniqeImageArray.forEach((image, index) => {
+		// console.log("imageLinks image:",image)
+		let filename = imageFolderPath + image.filename;  // TODO sanitize for React routes target in extractImageLinks
+		saveImageToDisk(image.src, filename, index);
+	});
 
 	// Save product data as json
 	storeData(uniqueDataArray,`../data/product_family_data/${p.audience}_${p.category}_${p.group}.json`)		// TODO sanitize for React routes target
@@ -196,45 +175,45 @@ const saveImageToDisk = (url, filename, n) => {
 // * 	loaded version, construct a new URL
 ///////////////////////////////////////////////////////////////////////
 const initLoadSite = async (page, p) => {
-	// page.on("console", (msg) => {
-	// 	for (let i = 0; i < msg.args().length; ++i)
-	// 	console.log(`${i}: ${msg.args()[i]}`);
-	// });
+	page.on("console", (msg) => {
+		for (let i = 0; i < msg.args().length; ++i)
+		console.log(`${i}: ${msg.args()[i]}`);
+	});
 
 	// * Initial URL
-
+	// TODO - Deal with kid and baby routes  - remove gender
+	// TODO - Deal with compound categories or groups - combine them w/ hyphen
+	// let initialURL;
+	// if(p.audience.slice(0,4) === 'kids'){
+	// 	initialURL = `https://www2.hm.com/en_us/${p.audience}/${p.category}/${p.group}.html`
+	// }else if(p.audience.slice(0,4) === 'baby'){
+	// 	initialURL = `https://www2.hm.com/en_us/${p.audience}/${p.category}/${p.group}.html`
+	// }else{
 	let initialURL = `https://www2.hm.com/en_us/${p.audience}/products/${p.category}/${p.group}.html`; 
-	console.log('loading page-> '+ initialURL)
-	await page.goto(initialURL, { waitUntil: "networkidle0" , timeout: 0});
-	let loadedURL = null;
-	try{
-		await page.waitForSelector("h2.load-more-heading", {timeout: 5000});
-		// Extract total items count
-		const totalItems = parseInt(
-			await page.evaluate(() =>
-				document
-					.getElementsByClassName("load-more-heading")[0]
-					.getAttribute("data-total")
-			)
-		);
-		// Fully loaded URL
-		loadedURL = `${initialURL}?offset=0&page-size=${totalItems}`;
-		console.log(`For ${totalItems} items, using ${loadedURL}`)
-	}catch(err){
-		console.log("get load more, error:",err)
-	}finally{
-		console.log(`Using URL: ${initialURL}`)
-		return initialURL
-	}
-	
-// Save this code in case required later
-	// Deal With Cookie Consent Button  // TODO make this conditional if first time...
-	// const consentButton = await page.$(`#onetrust-accept-btn-handler`);
-	// await consentButton.click();
-	// console.log("clicked consent");
-	
-	
+	// }
+	await page.goto(initialURL, { waitUntil: "networkidle0" });
+	await page.waitForSelector("h2.load-more-heading");
 
+	// Deal With Cookie Consent Button  // TODO make this conditional if first time...
+	const consentButton = await page.$(`#onetrust-accept-btn-handler`);
+	await consentButton.click();
+	console.log("clicked consent");
+	
+	// Extract total items count
+	const totalItems = parseInt(
+		await page.evaluate(() =>
+			document
+				.getElementsByClassName("load-more-heading")[0]
+				.getAttribute("data-total")
+		)
+	);
+	
+	// Fully loaded URL
+	const loadedURL = `${initialURL}?offset=0&page-size=${totalItems}`;
+
+	console.log(`For total items=${totalItems}, using URL: ${loadedURL}`)
+
+	return loadedURL
 }
 
 ///////////////////////////////////////////////////////////////////////
@@ -253,57 +232,20 @@ const removeDuplicates = (arr, key) => {
 // * Main function get list of products to scrape, loop over and 
 //		call scrape function
 ///////////////////////////////////////////////////////////////////////
+const scrapeHM = async (productList) => {
+	console.log("Scraping H & M...")
+	let pCount = productList.length
 
+	// pCount=3 // Override for single product debugging
 
+	for(let i = 0; i < pCount; i++){
+		console.log(`product ${i}:`, productList[i])
+		let scrapeStatus = await scrapeProductGroupPage(productList[i])
+		console.log(`prouduct${i} - ${scrapeStatus}`)
 
-
-
-
-const scrapeHM = async (tree) => {
-	console.log("Scraping H&M for product families")
-
-	const startAt = {
-		audience: "men",
-		category: "",
-		group: "jumpsuits"
-	}
-	let doScrape = true;
-	let scrapeStatus = null;
-
-
-	// console.log('manifest = ', tree)
-
-	// for(let audience of tree){
-	// 	console.log(audience.audience)
-		let audience = tree[0]
-		for(let category of audience.categories){
-			console.log(" |- " + category.category)
-			for(let group of category.groups){
-
-				// call an extract function here
-				let p = {
-					audience: audience.audience,
-					category: category.category,
-					group: group.group
-				}
-				if(!doScrape){
-					if(p.audience === startAt.audience && p.category === startAt.category && p.group === startAt.group){
-						doScrape = true;
-						scrapeStatus = await scrapeProductGroupPage(p)
-					}else{
-						scrapeStatus = "skipped";
-					}
-				}else{
-					scrapeStatus = await scrapeProductGroupPage(p)
-				}
-				
-				
-
-				console.log("     |- " + group.group + "  -> "+ scrapeStatus)
-
-			}
-		}
-	// }
+	}	
 }
 
-scrapeHM(useTest ? testManifestTree : manifestTree)
+
+
+scrapeHM(useTest ? testProductList : productList)
