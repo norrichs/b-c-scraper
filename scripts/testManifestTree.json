@@ -1,0 +1,28 @@
+
+[	
+{
+	"audience": "men",
+	"link": "/en_us/men.html",
+	"label": "Men",
+	"categories": [
+		{
+			"category": "view-all",
+			"link": "/en_us/men/products/view-all.html",
+			"label": "View All",
+			"groups": []
+		},
+		{
+			"category": "t-shirts-tank-tops",
+			"link": "/en_us/men/products/t-shirts-tank-tops.html",
+			"label": "T-shirts & Tanks",
+			"groups": [
+				{
+					"group": "tanks",
+					"link": "/en_us/men/products/t-shirts-tank-tops/tanks.html",
+					"label": "Tanks",
+					"families": []
+				}
+			]
+		}
+	]
+}]

@@ -1,0 +1,2444 @@
+[
+	{
+		"audience": "women",
+		"link": "/en_us/women.html",
+		"label": "Women",
+		"categories": [
+			{
+				"category": "view-all",
+				"link": "/en_us/women/products/view-all.html",
+				"label": "View All",
+				"groups": []
+			},
+			{
+				"category": "dresses",
+				"link": "/en_us/women/products/dresses.html",
+				"label": "Dresses",
+				"groups": [
+					{
+						"group": "t-shirt-dresses",
+						"link": "/en_us/women/products/dresses/t-shirt-dresses.html",
+						"label": "T-Shirt dresses",
+						"families": []
+					},
+					{
+						"group": "denim",
+						"link": "/en_us/women/products/dresses/denim.html",
+						"label": "Denim Dresses",
+						"families": []
+					},
+					{
+						"group": "short-dresses",
+						"link": "/en_us/women/products/dresses/short-dresses.html",
+						"label": "Short Dresses",
+						"families": []
+					},
+					{
+						"group": "midi-dresses",
+						"link": "/en_us/women/products/dresses/midi-dresses.html",
+						"label": "Midi Dresses",
+						"families": []
+					},
+					{
+						"group": "maxi-dresses",
+						"link": "/en_us/women/products/dresses/maxi-dresses.html",
+						"label": "Maxi Dresses",
+						"families": []
+					},
+					{
+						"group": "bodycon-dresses",
+						"link": "/en_us/women/products/dresses/bodycon-dresses.html",
+						"label": "Bodycon Dresses",
+						"families": []
+					},
+					{
+						"group": "party-dresses",
+						"link": "/en_us/women/products/dresses/party-dresses.html",
+						"label": "Party Dresses",
+						"families": []
+					},
+					{
+						"group": "lace-dresses",
+						"link": "/en_us/women/products/dresses/lace-dresses.html",
+						"label": "Lace Dresses",
+						"families": []
+					},
+					{
+						"group": "shirt-dresses",
+						"link": "/en_us/women/products/dresses/shirt-dresses.html",
+						"label": "Shirt Dresses",
+						"families": []
+					},
+					{
+						"group": "sequin-dresses",
+						"link": "/en_us/women/products/dresses/sequin-dresses.html",
+						"label": "Sequin Dresses",
+						"families": []
+					},
+					{
+						"group": "wrap-dresses",
+						"link": "/en_us/women/products/dresses/wrap-dresses.html",
+						"label": "Wrap Dresses",
+						"families": []
+					},
+					{
+						"group": "skater-dresses",
+						"link": "/en_us/women/products/dresses/skater-dresses.html",
+						"label": "Skater Dresses",
+						"families": []
+					},
+					{
+						"group": "sweater-dresses",
+						"link": "/en_us/women/products/dresses/sweater-dresses.html",
+						"label": "Sweater Dresses",
+						"families": []
+					},
+					{
+						"group": "kaftan",
+						"link": "/en_us/women/products/dresses/kaftan.html",
+						"label": "Kaftan Dresses",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "tops",
+				"link": "/en_us/women/products/tops.html",
+				"label": "Tops",
+				"groups": [
+					{
+						"group": "vest",
+						"link": "/en_us/women/products/tops/vest.html",
+						"label": "Sleeveless",
+						"families": []
+					},
+					{
+						"group": "short-sleeve",
+						"link": "/en_us/women/products/tops/short-sleeve.html",
+						"label": "Short Sleeve",
+						"families": []
+					},
+					{
+						"group": "long-sleeve",
+						"link": "/en_us/women/products/tops/long-sleeve.html",
+						"label": "Long Sleeves",
+						"families": []
+					},
+					{
+						"group": "crop",
+						"link": "/en_us/women/products/tops/crop.html",
+						"label": "Crop Tops",
+						"families": []
+					},
+					{
+						"group": "bodysuits",
+						"link": "/en_us/women/products/tops/bodysuits.html",
+						"label": "Bodysuits",
+						"families": []
+					},
+					{
+						"group": "t-shirts",
+						"link": "/en_us/women/products/tops/t-shirts.html",
+						"label": "T-Shirts",
+						"families": []
+					},
+					{
+						"group": "printed-graphic-t-shirts",
+						"link": "/en_us/women/products/tops/printed-graphic-t-shirts.html",
+						"label": "Graphic Tees & Printed T-Shirts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shirts-blouses",
+				"link": "/en_us/women/products/shirts-blouses.html",
+				"label": "Shirts & Blouses",
+				"groups": [
+					{
+						"group": "shirts",
+						"link": "/en_us/women/products/shirts-blouses/shirts.html",
+						"label": "Shirts",
+						"families": []
+					},
+					{
+						"group": "blouses",
+						"link": "/en_us/women/products/shirts-blouses/blouses.html",
+						"label": "Blouses",
+						"families": []
+					},
+					{
+						"group": "tunics",
+						"link": "/en_us/women/products/shirts-blouses/tunics.html",
+						"label": "Tunics",
+						"families": []
+					},
+					{
+						"group": "off-shoulder",
+						"link": "/en_us/women/products/shirts-blouses/off-shoulder.html",
+						"label": "Off-The-Shoulder Shirts & Blouses",
+						"families": []
+					},
+					{
+						"group": "denim-shirts",
+						"link": "/en_us/women/products/shirts-blouses/denim-shirts.html",
+						"label": "Denim shirts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "pants",
+				"link": "/en_us/women/products/pants.html",
+				"label": "Pants",
+				"groups": [
+					{
+						"group": "paperbag-pants",
+						"link": "/en_us/women/products/pants/paperbag-pants.html",
+						"label": "Paperbag Waist Pants",
+						"families": []
+					},
+					{
+						"group": "high-waisted",
+						"link": "/en_us/women/products/pants/high-waisted.html",
+						"label": "High Waist Pants",
+						"families": []
+					},
+					{
+						"group": "cargo",
+						"link": "/en_us/women/products/pants/cargo.html",
+						"label": "Cargo Pants",
+						"families": []
+					},
+					{
+						"group": "leggings",
+						"link": "/en_us/women/products/pants/leggings.html",
+						"label": "Leggings",
+						"families": []
+					},
+					{
+						"group": "sweatpants",
+						"link": "/en_us/women/products/pants/sweatpants.html",
+						"label": "Joggers & Sweatpants",
+						"families": []
+					},
+					{
+						"group": "flare",
+						"link": "/en_us/women/products/pants/flare.html",
+						"label": "Flared Pants",
+						"families": []
+					},
+					{
+						"group": "chinos-slacks",
+						"link": "/en_us/women/products/pants/chinos-slacks.html",
+						"label": "Chinos & Slacks",
+						"families": []
+					},
+					{
+						"group": "culottes",
+						"link": "/en_us/women/products/pants/culottes.html",
+						"label": "Culottes",
+						"families": []
+					},
+					{
+						"group": "dress-pants",
+						"link": "/en_us/women/products/pants/dress-pants.html",
+						"label": "Dress Pants",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "jeans",
+				"link": "/en_us/women/products/jeans.html",
+				"label": "Jeans",
+				"groups": [
+					{
+						"group": "the-jeans-guide-redirect",
+						"link": "/en_us/women/products/jeans/the-jeans-guide-redirect.html",
+						"label": "The Jeans Guide",
+						"families": []
+					},
+					{
+						"group": "wide-leg-jeans",
+						"link": "/en_us/women/products/jeans/wide-leg-jeans.html",
+						"label": "Wide-Leg Jeans",
+						"families": []
+					},
+					{
+						"group": "skinny",
+						"link": "/en_us/women/products/jeans/skinny.html",
+						"label": "Skinny",
+						"families": []
+					},
+					{
+						"group": "shaping",
+						"link": "/en_us/women/products/jeans/shaping.html",
+						"label": "Shaping",
+						"families": []
+					},
+					{
+						"group": "straight-leg",
+						"link": "/en_us/women/products/jeans/straight-leg.html",
+						"label": "Straight",
+						"families": []
+					},
+					{
+						"group": "loose-fit",
+						"link": "/en_us/women/products/jeans/loose-fit.html",
+						"label": "Loose",
+						"families": []
+					},
+					{
+						"group": "mom",
+						"link": "/en_us/women/products/jeans/mom.html",
+						"label": "Mom",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "cardigans-sweaters",
+				"link": "/en_us/women/products/cardigans-sweaters.html",
+				"label": "Cardigans & Sweaters",
+				"groups": [
+					{
+						"group": "sweater-vests",
+						"link": "/en_us/women/products/cardigans-sweaters/sweater-vests.html",
+						"label": "Sweater Vests",
+						"families": []
+					},
+					{
+						"group": "cardigans",
+						"link": "/en_us/women/products/cardigans-sweaters/cardigans.html",
+						"label": "Cardigans",
+						"families": []
+					},
+					{
+						"group": "sweaters",
+						"link": "/en_us/women/products/cardigans-sweaters/sweaters.html",
+						"label": "Sweaters",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "hoodies-sweatshirts",
+				"link": "/en_us/women/products/hoodies-sweatshirts.html",
+				"label": "Hoodies & Sweatshirts",
+				"groups": [
+					{
+						"group": "hoodies",
+						"link": "/en_us/women/products/hoodies-sweatshirts/hoodies.html",
+						"label": "Hoodies",
+						"families": []
+					},
+					{
+						"group": "sweatshirts",
+						"link": "/en_us/women/products/hoodies-sweatshirts/sweatshirts.html",
+						"label": "Sweatshirts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "basics",
+				"link": "/en_us/women/products/basics.html",
+				"label": "Basics",
+				"groups": [
+					{
+						"group": "tops",
+						"link": "/en_us/women/products/basics/tops.html",
+						"label": "Tops",
+						"families": []
+					},
+					{
+						"group": "cardigans-sweaters",
+						"link": "/en_us/women/products/basics/cardigans-sweaters.html",
+						"label": "Cardigans & Sweaters",
+						"families": []
+					},
+					{
+						"group": "dresses-skirts",
+						"link": "/en_us/women/products/basics/dresses-skirts.html",
+						"label": "Dresses & Skirts",
+						"families": []
+					},
+					{
+						"group": "pants-leggings",
+						"link": "/en_us/women/products/basics/pants-leggings.html",
+						"label": "Pants & Leggings",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "blazers-vests",
+				"link": "/en_us/women/products/blazers-vests.html",
+				"label": "Blazers",
+				"groups": []
+			},
+			{
+				"category": "jackets-coats",
+				"link": "/en_us/women/products/jackets-coats.html",
+				"label": "Jackets & Coats",
+				"groups": [
+					{
+						"group": "shirt-jackets",
+						"link": "/en_us/women/products/jackets-coats/shirt-jackets.html",
+						"label": "Shackets",
+						"families": []
+					},
+					{
+						"group": "trench-coat",
+						"link": "/en_us/women/products/jackets-coats/trench-coat.html",
+						"label": "Trench Coats",
+						"families": []
+					},
+					{
+						"group": "jackets",
+						"link": "/en_us/women/products/jackets-coats/jackets.html",
+						"label": "Jackets",
+						"families": []
+					},
+					{
+						"group": "coats",
+						"link": "/en_us/women/products/jackets-coats/coats.html",
+						"label": "Coats",
+						"families": []
+					},
+					{
+						"group": "parka",
+						"link": "/en_us/women/products/jackets-coats/parka.html",
+						"label": "Parkas",
+						"families": []
+					},
+					{
+						"group": "winter-jackets",
+						"link": "/en_us/women/products/jackets-coats/winter-jackets.html",
+						"label": "Winter Coats",
+						"families": []
+					},
+					{
+						"group": "biker-jackets",
+						"link": "/en_us/women/products/jackets-coats/biker-jackets.html",
+						"label": "Biker Jackets",
+						"families": []
+					},
+					{
+						"group": "denim-jackets",
+						"link": "/en_us/women/products/jackets-coats/denim-jackets.html",
+						"label": "Denim Jackets",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shoes",
+				"link": "/en_us/women/products/shoes.html",
+				"label": "Shoes",
+				"groups": [
+					{
+						"group": "pumps-high-heels",
+						"link": "/en_us/women/products/shoes/pumps-high-heels.html",
+						"label": "Pumps & High Heels",
+						"families": []
+					},
+					{
+						"group": "ballet-flats",
+						"link": "/en_us/women/products/shoes/ballet-flats.html",
+						"label": "Ballerinas & Flats",
+						"families": []
+					},
+					{
+						"group": "espadrilles-sandals",
+						"link": "/en_us/women/products/shoes/espadrilles-sandals.html",
+						"label": "Sandals & Espadrilles",
+						"families": []
+					},
+					{
+						"group": "sneakers",
+						"link": "/en_us/women/products/shoes/sneakers.html",
+						"label": "Sneakers",
+						"families": []
+					},
+					{
+						"group": "boots",
+						"link": "/en_us/women/products/shoes/boots.html",
+						"label": "Boots",
+						"families": []
+					},
+					{
+						"group": "loafers",
+						"link": "/en_us/women/products/shoes/loafers.html",
+						"label": "Loafers",
+						"families": []
+					},
+					{
+						"group": "slip-on-shoes",
+						"link": "/en_us/women/products/shoes/slip-on-shoes.html",
+						"label": "Slip-On Shoes",
+						"families": []
+					},
+					{
+						"group": "flip-flops",
+						"link": "/en_us/women/products/shoes/flip-flops.html",
+						"label": "Flip Flops",
+						"families": []
+					},
+					{
+						"group": "slippers",
+						"link": "/en_us/women/products/shoes/slippers.html",
+						"label": "Slippers",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "workout-clothes",
+				"link": "/en_us/women/products/workout-clothes.html",
+				"label": "Sportswear",
+				"groups": [
+					{
+						"group": "tops",
+						"link": "/en_us/women/products/workout-clothes/tops.html",
+						"label": "Sport Shirts",
+						"families": []
+					},
+					{
+						"group": "sport-bras",
+						"link": "/en_us/women/products/workout-clothes/sport-bras.html",
+						"label": "Sport Bras",
+						"families": []
+					},
+					{
+						"group": "jackets",
+						"link": "/en_us/women/products/workout-clothes/jackets.html",
+						"label": "Jackets",
+						"families": []
+					},
+					{
+						"group": "bottoms",
+						"link": "/en_us/women/products/workout-clothes/bottoms.html",
+						"label": "Bottoms",
+						"families": []
+					},
+					{
+						"group": "accessories",
+						"link": "/en_us/women/products/workout-clothes/accessories.html",
+						"label": "Sports Accessories",
+						"families": []
+					},
+					{
+						"group": "yoga-pants-tops",
+						"link": "/en_us/women/products/workout-clothes/yoga-pants-tops.html",
+						"label": "Yoga",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "jumpsuits-rompers",
+				"link": "/en_us/women/products/jumpsuits-rompers.html",
+				"label": "Jumpsuits & Rompers",
+				"groups": [
+					{
+						"group": "overalls",
+						"link": "/en_us/women/products/jumpsuits-rompers/overalls.html",
+						"label": "Overalls",
+						"families": []
+					},
+					{
+						"group": "long-jumpsuits",
+						"link": "/en_us/women/products/jumpsuits-rompers/long-jumpsuits.html",
+						"label": "Long Jumpsuits",
+						"families": []
+					},
+					{
+						"group": "playsuits-rompers",
+						"link": "/en_us/women/products/jumpsuits-rompers/playsuits-rompers.html",
+						"label": "Rompers & Playsuits",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "swimwear",
+				"link": "/en_us/women/products/swimwear.html",
+				"label": "Swimwear & Beachwear",
+				"groups": [
+					{
+						"group": "bikini-sets",
+						"link": "/en_us/women/products/swimwear/bikini-sets.html",
+						"label": "Bikini Sets",
+						"families": []
+					},
+					{
+						"group": "swimsuits",
+						"link": "/en_us/women/products/swimwear/swimsuits.html",
+						"label": "Swimsuits",
+						"families": []
+					},
+					{
+						"group": "beachwear",
+						"link": "/en_us/women/products/swimwear/beachwear.html",
+						"label": "Beachwear",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "skirts",
+				"link": "/en_us/women/products/skirts.html",
+				"label": "Skirts",
+				"groups": [
+					{
+						"group": "pleated",
+						"link": "/en_us/women/products/skirts/pleated.html",
+						"label": "Pleated Skirts",
+						"families": []
+					},
+					{
+						"group": "short-skirts",
+						"link": "/en_us/women/products/skirts/short-skirts.html",
+						"label": "Short Skirts",
+						"families": []
+					},
+					{
+						"group": "midi-skirts",
+						"link": "/en_us/women/products/skirts/midi-skirts.html",
+						"label": "Midi Skirts",
+						"families": []
+					},
+					{
+						"group": "long-skirts",
+						"link": "/en_us/women/products/skirts/long-skirts.html",
+						"label": "Maxi Skirts",
+						"families": []
+					},
+					{
+						"group": "pencil-skirts",
+						"link": "/en_us/women/products/skirts/pencil-skirts.html",
+						"label": "Pencil Skirts",
+						"families": []
+					},
+					{
+						"group": "denim-skirts",
+						"link": "/en_us/women/products/skirts/denim-skirts.html",
+						"label": "Denim Skirts",
+						"families": []
+					},
+					{
+						"group": "high-waisted-skirts",
+						"link": "/en_us/women/products/skirts/high-waisted-skirts.html",
+						"label": "High-Waisted Skirts",
+						"families": []
+					},
+					{
+						"group": "skater-skirts",
+						"link": "/en_us/women/products/skirts/skater-skirts.html",
+						"label": "Skater Skirts",
+						"families": []
+					},
+					{
+						"group": "wrap-skirts",
+						"link": "/en_us/women/products/skirts/wrap-skirts.html",
+						"label": "Wrap Skirts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shorts",
+				"link": "/en_us/women/products/shorts.html",
+				"label": "Shorts",
+				"groups": [
+					{
+						"group": "denim-shorts",
+						"link": "/en_us/women/products/shorts/denim-shorts.html",
+						"label": "Denim shorts",
+						"families": []
+					},
+					{
+						"group": "high-waisted-shorts",
+						"link": "/en_us/women/products/shorts/high-waisted-shorts.html",
+						"label": "High-Waisted Shorts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "accessories",
+				"link": "/en_us/women/products/accessories.html",
+				"label": "Accessories",
+				"groups": [
+					{
+						"group": "face-masks",
+						"link": "/en_us/women/products/accessories/face-masks.html",
+						"label": "Face Masks",
+						"families": []
+					},
+					{
+						"group": "purses-bags",
+						"link": "/en_us/women/products/accessories/purses-bags.html",
+						"label": "Bags",
+						"families": []
+					},
+					{
+						"group": "belts",
+						"link": "/en_us/women/products/accessories/belts.html",
+						"label": "Belts",
+						"families": []
+					},
+					{
+						"group": "jewelry",
+						"link": "/en_us/women/products/accessories/jewelry.html",
+						"label": "Jewelry",
+						"families": []
+					},
+					{
+						"group": "hair-accessories",
+						"link": "/en_us/women/products/accessories/hair-accessories.html",
+						"label": "Hair Accessories",
+						"families": []
+					},
+					{
+						"group": "sunglasses",
+						"link": "/en_us/women/products/accessories/sunglasses.html",
+						"label": "Sunglasses",
+						"families": []
+					},
+					{
+						"group": "mobile-accessories",
+						"link": "/en_us/women/products/accessories/mobile-accessories.html",
+						"label": "Mobile Accessories",
+						"families": []
+					},
+					{
+						"group": "gloves",
+						"link": "/en_us/women/products/accessories/gloves.html",
+						"label": "Gloves",
+						"families": []
+					},
+					{
+						"group": "scarves",
+						"link": "/en_us/women/products/accessories/scarves.html",
+						"label": "Scarves",
+						"families": []
+					},
+					{
+						"group": "hats",
+						"link": "/en_us/women/products/accessories/hats.html",
+						"label": "Hats",
+						"families": []
+					},
+					{
+						"group": "wallets-coin-purses",
+						"link": "/en_us/women/products/accessories/wallets-coin-purses.html",
+						"label": "Wallets & Coin Purses",
+						"families": []
+					},
+					{
+						"group": "ponchos-sarongs",
+						"link": "/en_us/women/products/accessories/ponchos-sarongs.html",
+						"label": "Sarongs & Ponchos",
+						"families": []
+					},
+					{
+						"group": "dog-clothes",
+						"link": "/en_us/women/products/accessories/dog-clothes.html",
+						"label": "Dog clothes",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "lingerie",
+				"link": "/en_us/women/products/lingerie.html",
+				"label": "Lingerie",
+				"groups": [
+					{
+						"group": "bras",
+						"link": "/en_us/women/products/lingerie/bras.html",
+						"label": "Bras",
+						"families": []
+					},
+					{
+						"group": "underwear-panties",
+						"link": "/en_us/women/products/lingerie/underwear-panties.html",
+						"label": "Briefs & Panties",
+						"families": []
+					},
+					{
+						"group": "corsets",
+						"link": "/en_us/women/products/lingerie/corsets.html",
+						"label": "Bodysuits & Corsets",
+						"families": []
+					},
+					{
+						"group": "bodyshapers",
+						"link": "/en_us/women/products/lingerie/bodyshapers.html",
+						"label": "Shaping Lingerie",
+						"families": []
+					},
+					{
+						"group": "accessories",
+						"link": "/en_us/women/products/lingerie/accessories.html",
+						"label": "Accessories",
+						"families": []
+					},
+					{
+						"group": "multipacks",
+						"link": "/en_us/women/products/lingerie/multipacks.html",
+						"label": "Multipacks",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "socks-tights",
+				"link": "/en_us/women/products/socks-tights.html",
+				"label": "Socks & Tights",
+				"groups": [
+					{
+						"group": "socks",
+						"link": "/en_us/women/products/socks-tights/socks.html",
+						"label": "Socks",
+						"families": []
+					},
+					{
+						"group": "leggings",
+						"link": "/en_us/women/products/socks-tights/leggings.html",
+						"label": "Tights & Leggings",
+						"families": []
+					},
+					{
+						"group": "shaping",
+						"link": "/en_us/women/products/socks-tights/shaping.html",
+						"label": "Shaping",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "maternity-clothes",
+				"link": "/en_us/women/products/maternity-clothes.html",
+				"label": "Maternity Wear",
+				"groups": [
+					{
+						"group": "new-arrivals",
+						"link": "/en_us/women/products/maternity-clothes/new-arrivals.html",
+						"label": "New Arrivals",
+						"families": []
+					},
+					{
+						"group": "tops",
+						"link": "/en_us/women/products/maternity-clothes/tops.html",
+						"label": "Tops",
+						"families": []
+					},
+					{
+						"group": "jeans",
+						"link": "/en_us/women/products/maternity-clothes/jeans.html",
+						"label": "Jeans",
+						"families": []
+					},
+					{
+						"group": "dresses",
+						"link": "/en_us/women/products/maternity-clothes/dresses.html",
+						"label": "Dresses",
+						"families": []
+					},
+					{
+						"group": "lingerie",
+						"link": "/en_us/women/products/maternity-clothes/lingerie.html",
+						"label": "Lingerie & Tights",
+						"families": []
+					},
+					{
+						"group": "nursing-bras-clothes",
+						"link": "/en_us/women/products/maternity-clothes/nursing-bras-clothes.html",
+						"label": "Nursing",
+						"families": []
+					},
+					{
+						"group": "shirts-blouses",
+						"link": "/en_us/women/products/maternity-clothes/shirts-blouses.html",
+						"label": "Shirts & Blouses",
+						"families": []
+					},
+					{
+						"group": "cardigans-sweaters",
+						"link": "/en_us/women/products/maternity-clothes/cardigans-sweaters.html",
+						"label": "Cardigans & Sweaters",
+						"families": []
+					},
+					{
+						"group": "jackets-coats",
+						"link": "/en_us/women/products/maternity-clothes/jackets-coats.html",
+						"label": "Jackets & Coats",
+						"families": []
+					},
+					{
+						"group": "jumpsuits-rompers",
+						"link": "/en_us/women/products/maternity-clothes/jumpsuits-rompers.html",
+						"label": "Jumpsuits & Rompers",
+						"families": []
+					},
+					{
+						"group": "skirts-shorts",
+						"link": "/en_us/women/products/maternity-clothes/skirts-shorts.html",
+						"label": "Skirts & Shorts",
+						"families": []
+					},
+					{
+						"group": "pants-leggings",
+						"link": "/en_us/women/products/maternity-clothes/pants-leggings.html",
+						"label": "Trousers & Leggings",
+						"families": []
+					},
+					{
+						"group": "sleepwear-loungewear",
+						"link": "/en_us/women/products/maternity-clothes/sleepwear-loungewear.html",
+						"label": "Sleepwear & Loungewear",
+						"families": []
+					},
+					{
+						"group": "sportswear",
+						"link": "/en_us/women/products/maternity-clothes/sportswear.html",
+						"label": "Sportswear",
+						"families": []
+					},
+					{
+						"group": "occasion-wear",
+						"link": "/en_us/women/products/maternity-clothes/occasion-wear.html",
+						"label": "Occasion Wear",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "plus-size",
+				"link": "/en_us/women/products/plus-size.html",
+				"label": "Plus Sizes",
+				"groups": [
+					{
+						"group": "new-arrivals",
+						"link": "/en_us/women/products/plus-size/new-arrivals.html",
+						"label": "New Arrivals",
+						"families": []
+					},
+					{
+						"group": "tops",
+						"link": "/en_us/women/products/plus-size/tops.html",
+						"label": "Tops",
+						"families": []
+					},
+					{
+						"group": "jeans",
+						"link": "/en_us/women/products/plus-size/jeans.html",
+						"label": "Jeans",
+						"families": []
+					},
+					{
+						"group": "dresses",
+						"link": "/en_us/women/products/plus-size/dresses.html",
+						"label": "Dresses",
+						"families": []
+					},
+					{
+						"group": "activewear",
+						"link": "/en_us/women/products/plus-size/activewear.html",
+						"label": "Sportswear",
+						"families": []
+					},
+					{
+						"group": "swimwear",
+						"link": "/en_us/women/products/plus-size/swimwear.html",
+						"label": "Swimwear",
+						"families": []
+					},
+					{
+						"group": "lingerie-tights",
+						"link": "/en_us/women/products/plus-size/lingerie-tights.html",
+						"label": "Lingerie & Tights",
+						"families": []
+					},
+					{
+						"group": "cardigans-sweaters",
+						"link": "/en_us/women/products/plus-size/cardigans-sweaters.html",
+						"label": "Cardigans & Sweaters",
+						"families": []
+					},
+					{
+						"group": "shirts-blouses",
+						"link": "/en_us/women/products/plus-size/shirts-blouses.html",
+						"label": "Shirts & Blouses",
+						"families": []
+					},
+					{
+						"group": "jumpsuits",
+						"link": "/en_us/women/products/plus-size/jumpsuits.html",
+						"label": "Jumpsuits & Rompers",
+						"families": []
+					},
+					{
+						"group": "jackets-coats",
+						"link": "/en_us/women/products/plus-size/jackets-coats.html",
+						"label": "Jackets & Coats",
+						"families": []
+					},
+					{
+						"group": "pants-leggings",
+						"link": "/en_us/women/products/plus-size/pants-leggings.html",
+						"label": "Pants & Leggings",
+						"families": []
+					},
+					{
+						"group": "skirts-shorts",
+						"link": "/en_us/women/products/plus-size/skirts-shorts.html",
+						"label": "Skirts & Shorts",
+						"families": []
+					},
+					{
+						"group": "nightwear-loungewear",
+						"link": "/en_us/women/products/plus-size/nightwear-loungewear.html",
+						"label": "Sleepwear & Loungewear",
+						"families": []
+					},
+					{
+						"group": "occasion-wear",
+						"link": "/en_us/women/products/plus-size/occasion-wear.html",
+						"label": "Occasion Wear",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "beauty",
+				"link": "/en_us/women/products/beauty.html",
+				"label": "Beauty",
+				"groups": [
+					{
+						"group": "face-products",
+						"link": "/en_us/women/products/beauty/face-products.html",
+						"label": "Face",
+						"families": []
+					},
+					{
+						"group": "eye-make-up",
+						"link": "/en_us/women/products/beauty/eye-make-up.html",
+						"label": "Eyes",
+						"families": []
+					},
+					{
+						"group": "lip",
+						"link": "/en_us/women/products/beauty/lip.html",
+						"label": "Lips",
+						"families": []
+					},
+					{
+						"group": "nail-products",
+						"link": "/en_us/women/products/beauty/nail-products.html",
+						"label": "Nails",
+						"families": []
+					},
+					{
+						"group": "bath-body-care",
+						"link": "/en_us/women/products/beauty/bath-body-care.html",
+						"label": "Bath & Body Care",
+						"families": []
+					},
+					{
+						"group": "fragrances",
+						"link": "/en_us/women/products/beauty/fragrances.html",
+						"label": "Fragrance & Perfume",
+						"families": []
+					},
+					{
+						"group": "hair-products",
+						"link": "/en_us/women/products/beauty/hair-products.html",
+						"label": "Hair",
+						"families": []
+					},
+					{
+						"group": "brushes-tools",
+						"link": "/en_us/women/products/beauty/brushes-tools.html",
+						"label": "Brushes & Tools",
+						"families": []
+					},
+					{
+						"group": "makeup-remover-cleanser",
+						"link": "/en_us/women/products/beauty/makeup-remover-cleanser.html",
+						"label": "Removers & Cleansers",
+						"families": []
+					},
+					{
+						"group": "make-up-toiletry-bags",
+						"link": "/en_us/women/products/beauty/make-up-toiletry-bags.html",
+						"label": "Make-up Bags & Travel",
+						"families": []
+					},
+					{
+						"group": "conscious",
+						"link": "/en_us/women/products/beauty/conscious.html",
+						"label": "Conscious",
+						"families": []
+					},
+					{
+						"group": "limited-edition",
+						"link": "/en_us/women/products/beauty/limited-edition.html",
+						"label": "Limited Edition",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "petite",
+				"link": "/en_us/women/products/petite.html",
+				"label": "Petite Size",
+				"groups": []
+			},
+			{
+				"category": "loungewear",
+				"link": "/en_us/women/products/loungewear.html",
+				"label": "Loungewear",
+				"groups": []
+			},
+			{
+				"category": "sleepwear",
+				"link": "/en_us/women/products/sleepwear.html",
+				"label": "Sleepwear & Loungewear",
+				"groups": [
+					{
+						"group": "nightgowns",
+						"link": "/en_us/women/products/sleepwear/nightgowns.html",
+						"label": "Nightgowns",
+						"families": []
+					},
+					{
+						"group": "bathrobes-housecoats",
+						"link": "/en_us/women/products/sleepwear/bathrobes-housecoats.html",
+						"label": "Bath Robes",
+						"families": []
+					},
+					{
+						"group": "pajamas",
+						"link": "/en_us/women/products/sleepwear/pajamas.html",
+						"label": "Pajamas",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "premium-selection",
+				"link": "/en_us/women/products/premium-selection.html",
+				"label": "Premium Selection",
+				"groups": [
+					{
+						"group": "tops",
+						"link": "/en_us/women/products/premium-selection/tops.html",
+						"label": "Tops",
+						"families": []
+					},
+					{
+						"group": "shoes",
+						"link": "/en_us/women/products/premium-selection/shoes.html",
+						"label": "Shoes",
+						"families": []
+					},
+					{
+						"group": "jackets-coats",
+						"link": "/en_us/women/products/premium-selection/jackets-coats.html",
+						"label": "Jackets & Coats",
+						"families": []
+					},
+					{
+						"group": "dresses",
+						"link": "/en_us/women/products/premium-selection/dresses.html",
+						"label": "Dresses",
+						"families": []
+					},
+					{
+						"group": "cardigans-sweaters",
+						"link": "/en_us/women/products/premium-selection/cardigans-sweaters.html",
+						"label": "Cardigans & Jumpers",
+						"families": []
+					},
+					{
+						"group": "pants",
+						"link": "/en_us/women/products/premium-selection/pants.html",
+						"label": "Bottoms",
+						"families": []
+					},
+					{
+						"group": "accessories",
+						"link": "/en_us/women/products/premium-selection/accessories.html",
+						"label": "Accessories",
+						"families": []
+					}
+				]
+			}
+		]
+	},
+	{
+		"audience": "men",
+		"link": "/en_us/men.html",
+		"label": "Men",
+		"categories": [
+			{
+				"category": "view-all",
+				"link": "/en_us/men/products/view-all.html",
+				"label": "View All",
+				"groups": []
+			},
+			{
+				"category": "t-shirts-tank-tops",
+				"link": "/en_us/men/products/t-shirts-tank-tops.html",
+				"label": "T-shirts & Tanks",
+				"groups": [
+					{
+						"group": "tanks",
+						"link": "/en_us/men/products/t-shirts-tank-tops/tanks.html",
+						"label": "Tanks",
+						"families": []
+					},
+					{
+						"group": "short-sleeves",
+						"link": "/en_us/men/products/t-shirts-tank-tops/short-sleeves.html",
+						"label": "T-shirts",
+						"families": []
+					},
+					{
+						"group": "graphic-printed-t-shirts",
+						"link": "/en_us/men/products/t-shirts-tank-tops/graphic-printed-t-shirts.html",
+						"label": "Graphic Tees & Printed T-Shirts",
+						"families": []
+					},
+					{
+						"group": "long-sleeves",
+						"link": "/en_us/men/products/t-shirts-tank-tops/long-sleeves.html",
+						"label": "Long Sleeves",
+						"families": []
+					},
+					{
+						"group": "polo-shirts",
+						"link": "/en_us/men/products/t-shirts-tank-tops/polo-shirts.html",
+						"label": "Polos",
+						"families": []
+					},
+					{
+						"group": "basics",
+						"link": "/en_us/men/products/t-shirts-tank-tops/basics.html",
+						"label": "Basics",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shorts",
+				"link": "/en_us/men/products/shorts.html",
+				"label": "Shorts",
+				"groups": [
+					{
+						"group": "sweat-shorts",
+						"link": "/en_us/men/products/shorts/sweat-shorts.html",
+						"label": "Sweatshorts",
+						"families": []
+					},
+					{
+						"group": "denim",
+						"link": "/en_us/men/products/shorts/denim.html",
+						"label": "Jeans Shorts",
+						"families": []
+					},
+					{
+						"group": "chino-shorts",
+						"link": "/en_us/men/products/shorts/chino-shorts.html",
+						"label": "Chino Shorts",
+						"families": []
+					},
+					{
+						"group": "cargo-shorts",
+						"link": "/en_us/men/products/shorts/cargo-shorts.html",
+						"label": "Cargo Shorts",
+						"families": []
+					},
+					{
+						"group": "casual-shorts",
+						"link": "/en_us/men/products/shorts/casual-shorts.html",
+						"label": "Casual Shorts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shirts",
+				"link": "/en_us/men/products/shirts.html",
+				"label": "Shirts",
+				"groups": [
+					{
+						"group": "casual",
+						"link": "/en_us/men/products/shirts/casual.html",
+						"label": "Casual",
+						"families": []
+					},
+					{
+						"group": "dress",
+						"link": "/en_us/men/products/shirts/dress.html",
+						"label": "Dressed",
+						"families": []
+					},
+					{
+						"group": "denim",
+						"link": "/en_us/men/products/shirts/denim.html",
+						"label": "Denim Shirts",
+						"families": []
+					},
+					{
+						"group": "short-sleeve-shirts",
+						"link": "/en_us/men/products/shirts/short-sleeve-shirts.html",
+						"label": "Short-Sleeve Shirts",
+						"families": []
+					},
+					{
+						"group": "flannel",
+						"link": "/en_us/men/products/shirts/flannel.html",
+						"label": "Flannel Shirts",
+						"families": []
+					},
+					{
+						"group": "linen",
+						"link": "/en_us/men/products/shirts/linen.html",
+						"label": "Linen Shirts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "pants",
+				"link": "/en_us/men/products/pants.html",
+				"label": "Pants",
+				"groups": [
+					{
+						"group": "chinos",
+						"link": "/en_us/men/products/pants/chinos.html",
+						"label": "Chinos",
+						"families": []
+					},
+					{
+						"group": "joggers",
+						"link": "/en_us/men/products/pants/joggers.html",
+						"label": "Joggers",
+						"families": []
+					},
+					{
+						"group": "cargo-pants",
+						"link": "/en_us/men/products/pants/cargo-pants.html",
+						"label": "Cargo Pants",
+						"families": []
+					},
+					{
+						"group": "dress-pants",
+						"link": "/en_us/men/products/pants/dress-pants.html",
+						"label": "Dress Pants",
+						"families": []
+					},
+					{
+						"group": "linen",
+						"link": "/en_us/men/products/pants/linen.html",
+						"label": "Linen Pants",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "hoodies-sweatshirts",
+				"link": "/en_us/men/products/hoodies-sweatshirts.html",
+				"label": "Hoodies & Sweatshirts",
+				"groups": [
+					{
+						"group": "hoodies",
+						"link": "/en_us/men/products/hoodies-sweatshirts/hoodies.html",
+						"label": "Hoodies",
+						"families": []
+					},
+					{
+						"group": "sweatshirts",
+						"link": "/en_us/men/products/hoodies-sweatshirts/sweatshirts.html",
+						"label": "Sweatshirts",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "jeans",
+				"link": "/en_us/men/products/jeans.html",
+				"label": "Jeans",
+				"groups": [
+					{
+						"group": "skinny",
+						"link": "/en_us/men/products/jeans/skinny.html",
+						"label": "Skinny",
+						"families": []
+					},
+					{
+						"group": "slim-fit",
+						"link": "/en_us/men/products/jeans/slim-fit.html",
+						"label": "Slim",
+						"families": []
+					},
+					{
+						"group": "regular",
+						"link": "/en_us/men/products/jeans/regular.html",
+						"label": "Regular",
+						"families": []
+					},
+					{
+						"group": "relaxed",
+						"link": "/en_us/men/products/jeans/relaxed.html",
+						"label": "Relaxed",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "swim-wear-trunks",
+				"link": "/en_us/men/products/swim-wear-trunks.html",
+				"label": "Swimwear",
+				"groups": []
+			},
+			{
+				"category": "suits-blazers",
+				"link": "/en_us/men/products/suits-blazers.html",
+				"label": "Suits & Blazers",
+				"groups": [
+					{
+						"group": "waistcoats",
+						"link": "/en_us/men/products/suits-blazers/waistcoats.html",
+						"label": "Suit Vests",
+						"families": []
+					},
+					{
+						"group": "sport-coats-jackets",
+						"link": "/en_us/men/products/suits-blazers/sport-coats-jackets.html",
+						"label": "Blazers",
+						"families": []
+					},
+					{
+						"group": "suits",
+						"link": "/en_us/men/products/suits-blazers/suits.html",
+						"label": "Suits",
+						"families": []
+					},
+					{
+						"group": "dress-pants",
+						"link": "/en_us/men/products/suits-blazers/dress-pants.html",
+						"label": "Suit Pants",
+						"families": []
+					},
+					{
+						"group": "premium-quality",
+						"link": "/en_us/men/products/suits-blazers/premium-quality.html",
+						"label": "Premium Quality",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "accessories",
+				"link": "/en_us/men/products/accessories.html",
+				"label": "Accessories",
+				"groups": [
+					{
+						"group": "sunglasses",
+						"link": "/en_us/men/products/accessories/sunglasses.html",
+						"label": "Sunglasses",
+						"families": []
+					},
+					{
+						"group": "jewelry",
+						"link": "/en_us/men/products/accessories/jewelry.html",
+						"label": "Jewelery",
+						"families": []
+					},
+					{
+						"group": "hats",
+						"link": "/en_us/men/products/accessories/hats.html",
+						"label": "Hats & caps",
+						"families": []
+					},
+					{
+						"group": "face-masks",
+						"link": "/en_us/men/products/accessories/face-masks.html",
+						"label": "Face Masks",
+						"families": []
+					},
+					{
+						"group": "gloves",
+						"link": "/en_us/men/products/accessories/gloves.html",
+						"label": "Gloves",
+						"families": []
+					},
+					{
+						"group": "ties-bow-ties-handkerchiefs",
+						"link": "/en_us/men/products/accessories/ties-bow-ties-handkerchiefs.html",
+						"label": "Ties, Bow tie & Handkerchiefs",
+						"families": []
+					},
+					{
+						"group": "belts-suspenders",
+						"link": "/en_us/men/products/accessories/belts-suspenders.html",
+						"label": "Belts & Suspenders",
+						"families": []
+					},
+					{
+						"group": "bags",
+						"link": "/en_us/men/products/accessories/bags.html",
+						"label": "Bags",
+						"families": []
+					},
+					{
+						"group": "sports-accessories",
+						"link": "/en_us/men/products/accessories/sports-accessories.html",
+						"label": "Sports Accessories",
+						"families": []
+					},
+					{
+						"group": "other",
+						"link": "/en_us/men/products/accessories/other.html",
+						"label": "Other",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shoes",
+				"link": "/en_us/men/products/shoes.html",
+				"label": "Shoes",
+				"groups": [
+					{
+						"group": "flip-flops",
+						"link": "/en_us/men/products/shoes/flip-flops.html",
+						"label": "Flip Flops",
+						"families": []
+					},
+					{
+						"group": "sneakers",
+						"link": "/en_us/men/products/shoes/sneakers.html",
+						"label": "Sneakers",
+						"families": []
+					},
+					{
+						"group": "espadrille-sandals",
+						"link": "/en_us/men/products/shoes/espadrille-sandals.html",
+						"label": "Sandals & Espadrilles",
+						"families": []
+					},
+					{
+						"group": "boots",
+						"link": "/en_us/men/products/shoes/boots.html",
+						"label": "Boots",
+						"families": []
+					},
+					{
+						"group": "dress-shoes",
+						"link": "/en_us/men/products/shoes/dress-shoes.html",
+						"label": "Dress Shoes",
+						"families": []
+					},
+					{
+						"group": "loafers",
+						"link": "/en_us/men/products/shoes/loafers.html",
+						"label": "Loafers",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "jackets-coats",
+				"link": "/en_us/men/products/jackets-coats.html",
+				"label": "Jackets & Coats",
+				"groups": [
+					{
+						"group": "jackets",
+						"link": "/en_us/men/products/jackets-coats/jackets.html",
+						"label": "Jackets",
+						"families": []
+					},
+					{
+						"group": "pea-coats-trenches",
+						"link": "/en_us/men/products/jackets-coats/pea-coats-trenches.html",
+						"label": "Coats",
+						"families": []
+					},
+					{
+						"group": "bomber-jackets",
+						"link": "/en_us/men/products/jackets-coats/bomber-jackets.html",
+						"label": "Bomber Jackets",
+						"families": []
+					},
+					{
+						"group": "parkas",
+						"link": "/en_us/men/products/jackets-coats/parkas.html",
+						"label": "Parkas",
+						"families": []
+					},
+					{
+						"group": "denim-jackets",
+						"link": "/en_us/men/products/jackets-coats/denim-jackets.html",
+						"label": "Denim Jackets",
+						"families": []
+					},
+					{
+						"group": "biker-jackets",
+						"link": "/en_us/men/products/jackets-coats/biker-jackets.html",
+						"label": "Biker Jackets",
+						"families": []
+					},
+					{
+						"group": "windbreaker-jackets",
+						"link": "/en_us/men/products/jackets-coats/windbreaker-jackets.html",
+						"label": "Windbreakers",
+						"families": []
+					},
+					{
+						"group": "puffer",
+						"link": "/en_us/men/products/jackets-coats/puffer.html",
+						"label": "Puffer Jackets",
+						"families": []
+					},
+					{
+						"group": "shirt-jackets",
+						"link": "/en_us/men/products/jackets-coats/shirt-jackets.html",
+						"label": "Shackets",
+						"families": []
+					},
+					{
+						"group": "trench-coats",
+						"link": "/en_us/men/products/jackets-coats/trench-coats.html",
+						"label": "Trench Coats",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "cardigans-sweaters",
+				"link": "/en_us/men/products/cardigans-sweaters.html",
+				"label": "Cardigans & Sweaters",
+				"groups": [
+					{
+						"group": "cardigans",
+						"link": "/en_us/men/products/cardigans-sweaters/cardigans.html",
+						"label": "Cardigans",
+						"families": []
+					},
+					{
+						"group": "sweaters",
+						"link": "/en_us/men/products/cardigans-sweaters/sweaters.html",
+						"label": "Sweaters",
+						"families": []
+					},
+					{
+						"group": "turtleneck-sweaters",
+						"link": "/en_us/men/products/cardigans-sweaters/turtleneck-sweaters.html",
+						"label": "Turtlenecks",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "underwear",
+				"link": "/en_us/men/products/underwear.html",
+				"label": "Underwear",
+				"groups": [
+					{
+						"group": "briefs",
+						"link": "/en_us/men/products/underwear/briefs.html",
+						"label": "Briefs",
+						"families": []
+					},
+					{
+						"group": "boxers",
+						"link": "/en_us/men/products/underwear/boxers.html",
+						"label": "Boxers",
+						"families": []
+					},
+					{
+						"group": "trunks",
+						"link": "/en_us/men/products/underwear/trunks.html",
+						"label": "Trunks",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "sportswear",
+				"link": "/en_us/men/products/sportswear.html",
+				"label": "Sportswear",
+				"groups": [
+					{
+						"group": "tops",
+						"link": "/en_us/men/products/sportswear/tops.html",
+						"label": "Sport Shirts",
+						"families": []
+					},
+					{
+						"group": "jackets",
+						"link": "/en_us/men/products/sportswear/jackets.html",
+						"label": "Jackets",
+						"families": []
+					},
+					{
+						"group": "joggers-sweatpants-shorts",
+						"link": "/en_us/men/products/sportswear/joggers-sweatpants-shorts.html",
+						"label": "Bottoms",
+						"families": []
+					},
+					{
+						"group": "accessories",
+						"link": "/en_us/men/products/sportswear/accessories.html",
+						"label": "Sports Accessories",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "nightwear-loungewear",
+				"link": "/en_us/men/products/nightwear-loungewear.html",
+				"label": "Sleepwear & Loungewear",
+				"groups": [
+					{
+						"group": "pajamas",
+						"link": "/en_us/men/products/nightwear-loungewear/pajamas.html",
+						"label": "Pajamas",
+						"families": []
+					},
+					{
+						"group": "robes",
+						"link": "/en_us/men/products/nightwear-loungewear/robes.html",
+						"label": "Robes",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "socks",
+				"link": "/en_us/men/products/socks.html",
+				"label": "Socks",
+				"groups": []
+			},
+			{
+				"category": "basics",
+				"link": "/en_us/men/products/basics.html",
+				"label": "Basics",
+				"groups": [
+					{
+						"group": "t-shirts",
+						"link": "/en_us/men/products/basics/t-shirts.html",
+						"label": "T-Shirts",
+						"families": []
+					},
+					{
+						"group": "tank-tops",
+						"link": "/en_us/men/products/basics/tank-tops.html",
+						"label": "Tank Tops",
+						"families": []
+					},
+					{
+						"group": "hoodies-sweatshirts",
+						"link": "/en_us/men/products/basics/hoodies-sweatshirts.html",
+						"label": "Hoodies & Sweatshirts",
+						"families": []
+					},
+					{
+						"group": "bottoms",
+						"link": "/en_us/men/products/basics/bottoms.html",
+						"label": "Bottoms",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "premium-selection",
+				"link": "/en_us/men/products/premium-selection.html",
+				"label": "Premium Selection",
+				"groups": [
+					{
+						"group": "t-shirts",
+						"link": "/en_us/men/products/premium-selection/t-shirts.html",
+						"label": "T-shirts",
+						"families": []
+					},
+					{
+						"group": "trousers",
+						"link": "/en_us/men/products/premium-selection/trousers.html",
+						"label": "Trousers",
+						"families": []
+					},
+					{
+						"group": "shoes",
+						"link": "/en_us/men/products/premium-selection/shoes.html",
+						"label": "Shoes",
+						"families": []
+					},
+					{
+						"group": "shirts",
+						"link": "/en_us/men/products/premium-selection/shirts.html",
+						"label": "Shirts",
+						"families": []
+					},
+					{
+						"group": "jackets-coats",
+						"link": "/en_us/men/products/premium-selection/jackets-coats.html",
+						"label": "Jackets & Coats",
+						"families": []
+					},
+					{
+						"group": "cardigans-sweaters",
+						"link": "/en_us/men/products/premium-selection/cardigans-sweaters.html",
+						"label": "Cardigans & Jumpers",
+						"families": []
+					},
+					{
+						"group": "accessories",
+						"link": "/en_us/men/products/premium-selection/accessories.html",
+						"label": "Accessories",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "big-tall",
+				"link": "/en_us/men/products/big-tall.html",
+				"label": "Extended sizes",
+				"groups": [
+					{
+						"group": "t-shirts-tank-tops",
+						"link": "/en_us/men/products/big-tall/t-shirts-tank-tops.html",
+						"label": "T-shirts & Tanks",
+						"families": []
+					},
+					{
+						"group": "shirts",
+						"link": "/en_us/men/products/big-tall/shirts.html",
+						"label": "Shirts",
+						"families": []
+					},
+					{
+						"group": "hoodies-sweatshirts",
+						"link": "/en_us/men/products/big-tall/hoodies-sweatshirts.html",
+						"label": "Hoodies & Sweatshirts",
+						"families": []
+					},
+					{
+						"group": "pants",
+						"link": "/en_us/men/products/big-tall/pants.html",
+						"label": "Bottoms",
+						"families": []
+					},
+					{
+						"group": "jackets-coats",
+						"link": "/en_us/men/products/big-tall/jackets-coats.html",
+						"label": "Outerwear",
+						"families": []
+					},
+					{
+						"group": "suits-blazers",
+						"link": "/en_us/men/products/big-tall/suits-blazers.html",
+						"label": "Blazers & Suits",
+						"families": []
+					},
+					{
+						"group": "sportswear",
+						"link": "/en_us/men/products/big-tall/sportswear.html",
+						"label": "Sportswear",
+						"families": []
+					},
+					{
+						"group": "underwear",
+						"link": "/en_us/men/products/big-tall/underwear.html",
+						"label": "Underwear",
+						"families": []
+					}
+				]
+			}
+		]
+	},
+	{
+		"audience": "divided",
+		"link": "/en_us/divided.html",
+		"label": "Divided",
+		"categories": [
+			{
+				"category": "view-all",
+				"link": "/en_us/divided/products/view-all.html",
+				"label": "View All",
+				"groups": []
+			},
+			{
+				"category": "dresses",
+				"link": "/en_us/divided/products/dresses.html",
+				"label": "Dresses",
+				"groups": []
+			},
+			{
+				"category": "tops",
+				"link": "/en_us/divided/products/tops.html",
+				"label": "Tops",
+				"groups": []
+			},
+			{
+				"category": "shirts-and-blouses",
+				"link": "/en_us/divided/products/shirts-and-blouses.html",
+				"label": "Shirts & Blouses",
+				"groups": []
+			},
+			{
+				"category": "jeans",
+				"link": "/en_us/divided/products/jeans.html",
+				"label": "Jeans",
+				"groups": [
+					{
+						"group": "skinny",
+						"link": "/en_us/divided/products/jeans/skinny.html",
+						"label": "Skinny",
+						"families": []
+					},
+					{
+						"group": "shaping",
+						"link": "/en_us/divided/products/jeans/shaping.html",
+						"label": "Shaping",
+						"families": []
+					},
+					{
+						"group": "slim",
+						"link": "/en_us/divided/products/jeans/slim.html",
+						"label": "Slim",
+						"families": []
+					},
+					{
+						"group": "high-waisted",
+						"link": "/en_us/divided/products/jeans/high-waisted.html",
+						"label": "High-Waisted",
+						"families": []
+					},
+					{
+						"group": "straight",
+						"link": "/en_us/divided/products/jeans/straight.html",
+						"label": "Straight",
+						"families": []
+					},
+					{
+						"group": "bootcut",
+						"link": "/en_us/divided/products/jeans/bootcut.html",
+						"label": "Bootcut",
+						"families": []
+					},
+					{
+						"group": "flare",
+						"link": "/en_us/divided/products/jeans/flare.html",
+						"label": "Flare",
+						"families": []
+					},
+					{
+						"group": "loose",
+						"link": "/en_us/divided/products/jeans/loose.html",
+						"label": "Loose",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "basics",
+				"link": "/en_us/divided/products/basics.html",
+				"label": "Divided - Basics",
+				"groups": []
+			},
+			{
+				"category": "hoodies-sweatshirts",
+				"link": "/en_us/divided/products/hoodies-sweatshirts.html",
+				"label": "Hoodies & Sweatshirts",
+				"groups": []
+			},
+			{
+				"category": "underwear-nightwear",
+				"link": "/en_us/divided/products/underwear-nightwear.html",
+				"label": "Underwear & Nightwear",
+				"groups": []
+			},
+			{
+				"category": "shoes",
+				"link": "/en_us/divided/products/shoes.html",
+				"label": "Shoes",
+				"groups": []
+			},
+			{
+				"category": "skirts",
+				"link": "/en_us/divided/products/skirts.html",
+				"label": "Skirts",
+				"groups": []
+			},
+			{
+				"category": "swimwear",
+				"link": "/en_us/divided/products/swimwear.html",
+				"label": "Swimwear",
+				"groups": []
+			},
+			{
+				"category": "shorts",
+				"link": "/en_us/divided/products/shorts.html",
+				"label": "Shorts",
+				"groups": []
+			},
+			{
+				"category": "jumpsuits-rompers",
+				"link": "/en_us/divided/products/jumpsuits-rompers.html",
+				"label": "Jumpsuits & Rompers",
+				"groups": []
+			},
+			{
+				"category": "cardigans-sweaters",
+				"link": "/en_us/divided/products/cardigans-sweaters.html",
+				"label": "Cardigans & Sweaters",
+				"groups": []
+			},
+			{
+				"category": "jackets-coats",
+				"link": "/en_us/divided/products/jackets-coats.html",
+				"label": "Outerwear",
+				"groups": []
+			},
+			{
+				"category": "accessories",
+				"link": "/en_us/divided/products/accessories.html",
+				"label": "Accessories",
+				"groups": []
+			},
+			{
+				"category": "pants-leggings",
+				"link": "/en_us/divided/products/pants-leggings.html",
+				"label": "Pants & Leggings",
+				"groups": []
+			},
+			{
+				"category": "care-products",
+				"link": "/en_us/divided/products/care-products.html",
+				"label": "Care products",
+				"groups": []
+			}
+		]
+	},
+	{
+		"audience": "baby",
+		"link": "/en_us/baby.html",
+		"label": "Baby",
+		"categories": [
+			{
+				"category": "view-all",
+				"link": "/en_us/baby/products/view-all.html",
+				"label": "View all",
+				"groups": []
+			},
+			{
+				"category": "new-arrivals",
+				"link": "/en_us/baby/products/new-arrivals.html",
+				"label": "New Arrivals",
+				"groups": []
+			},
+			{
+				"category": "clothing",
+				"link": "/en_us/baby/products/clothing.html",
+				"label": "Clothing",
+				"groups": [
+					{
+						"group": "sets-outfits",
+						"link": "/en_us/baby/products/clothing/sets-outfits.html",
+						"label": "Sets & Outfits",
+						"families": []
+					},
+					{
+						"group": "dresses",
+						"link": "/en_us/baby/products/clothing/dresses.html",
+						"label": "Dresses",
+						"families": []
+					},
+					{
+						"group": "tops-t-shirts",
+						"link": "/en_us/baby/products/clothing/tops-t-shirts.html",
+						"label": "Tops & T-shirts",
+						"families": []
+					},
+					{
+						"group": "sweaters-cardigans",
+						"link": "/en_us/baby/products/clothing/sweaters-cardigans.html",
+						"label": "Sweaters & Cardigans",
+						"families": []
+					},
+					{
+						"group": "pants-jeans",
+						"link": "/en_us/baby/products/clothing/pants-jeans.html",
+						"label": "Pants & Jeans",
+						"families": []
+					},
+					{
+						"group": "bodysuits",
+						"link": "/en_us/baby/products/clothing/bodysuits.html",
+						"label": "Bodysuits",
+						"families": []
+					},
+					{
+						"group": "rompers",
+						"link": "/en_us/baby/products/clothing/rompers.html",
+						"label": "Rompers",
+						"families": []
+					},
+					{
+						"group": "shorts",
+						"link": "/en_us/baby/products/clothing/shorts.html",
+						"label": "Shorts",
+						"families": []
+					},
+					{
+						"group": "sleepwear",
+						"link": "/en_us/baby/products/clothing/sleepwear.html",
+						"label": "Sleepwear",
+						"families": []
+					},
+					{
+						"group": "socks-tights",
+						"link": "/en_us/baby/products/clothing/socks-tights.html",
+						"label": "Socks & Tights",
+						"families": []
+					},
+					{
+						"group": "swimwear",
+						"link": "/en_us/baby/products/clothing/swimwear.html",
+						"label": "Swimwear",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "outerwear",
+				"link": "/en_us/baby/products/outerwear.html",
+				"label": "Outerwear",
+				"groups": [
+					{
+						"group": "jackets-coats",
+						"link": "/en_us/baby/products/outerwear/jackets-coats.html",
+						"label": "Jackets & Coats",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "accessories",
+				"link": "/en_us/baby/products/accessories.html",
+				"label": "Accessories",
+				"groups": [
+					{
+						"group": "hats",
+						"link": "/en_us/baby/products/accessories/hats.html",
+						"label": "Hats",
+						"families": []
+					},
+					{
+						"group": "scarves-gloves",
+						"link": "/en_us/baby/products/accessories/scarves-gloves.html",
+						"label": "Scarves & Gloves",
+						"families": []
+					},
+					{
+						"group": "bibs-bandanas",
+						"link": "/en_us/baby/products/accessories/bibs-bandanas.html",
+						"label": "Bibs & Bandanas",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shoes",
+				"link": "/en_us/baby/products/shoes.html",
+				"label": "Shoes",
+				"groups": [
+					{
+						"group": "sneakers",
+						"link": "/en_us/baby/products/shoes/sneakers.html",
+						"label": "Sneakers",
+						"families": []
+					},
+					{
+						"group": "ballet-flats",
+						"link": "/en_us/baby/products/shoes/ballet-flats.html",
+						"label": "Ballet Flats",
+						"families": []
+					},
+					{
+						"group": "boots",
+						"link": "/en_us/baby/products/shoes/boots.html",
+						"label": "Boots",
+						"families": []
+					},
+					{
+						"group": "sandals-flip-flops",
+						"link": "/en_us/baby/products/shoes/sandals-flip-flops.html",
+						"label": "Sandals & Flip-Flops",
+						"families": []
+					},
+					{
+						"group": "slippers",
+						"link": "/en_us/baby/products/shoes/slippers.html",
+						"label": "Slippers",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "costumes",
+				"link": "/en_us/baby/products/costumes.html",
+				"label": "Costumes",
+				"groups": []
+			}
+		]
+	},
+	{
+		"audience": "kids",
+		"link": "/en_us/kids.html",
+		"label": "Kids",
+		"categories": [
+			{
+				"category": "view-all",
+				"link": "/en_us/kids/products/view-all.html",
+				"label": "View all",
+				"groups": []
+			},
+			{
+				"category": "new-arrivals",
+				"link": "/en_us/kids/products/new-arrivals.html",
+				"label": "New Arrivals",
+				"groups": []
+			},
+			{
+				"category": "clothing",
+				"link": "/en_us/kids/products/clothing.html",
+				"label": "Clothing",
+				"groups": [
+					{
+						"group": "dresses",
+						"link": "/en_us/kids/products/clothing/dresses.html",
+						"label": "Dresses",
+						"families": []
+					},
+					{
+						"group": "tops-t-shirts",
+						"link": "/en_us/kids/products/clothing/tops-t-shirts.html",
+						"label": "Tops & T-shirts",
+						"families": []
+					},
+					{
+						"group": "sweaters-sweatshirts",
+						"link": "/en_us/kids/products/clothing/sweaters-sweatshirts.html",
+						"label": "Sweaters & Sweatshirts",
+						"families": []
+					},
+					{
+						"group": "pants-jeans",
+						"link": "/en_us/kids/products/clothing/pants-jeans.html",
+						"label": "Pants & Jeans",
+						"families": []
+					},
+					{
+						"group": "skirts",
+						"link": "/en_us/kids/products/clothing/skirts.html",
+						"label": "Skirts",
+						"families": []
+					},
+					{
+						"group": "shorts",
+						"link": "/en_us/kids/products/clothing/shorts.html",
+						"label": "Shorts",
+						"families": []
+					},
+					{
+						"group": "jumpsuits-rompers",
+						"link": "/en_us/kids/products/clothing/jumpsuits-rompers.html",
+						"label": "Jumpsuits & Rompers",
+						"families": []
+					},
+					{
+						"group": "sets-outfits",
+						"link": "/en_us/kids/products/clothing/sets-outfits.html",
+						"label": "Sets & Outfits",
+						"families": []
+					},
+					{
+						"group": "blazers-suits",
+						"link": "/en_us/kids/products/clothing/blazers-suits.html",
+						"label": "Blazers & Suits",
+						"families": []
+					},
+					{
+						"group": "sleepwear",
+						"link": "/en_us/kids/products/clothing/sleepwear.html",
+						"label": "Sleepwear",
+						"families": []
+					},
+					{
+						"group": "underwear",
+						"link": "/en_us/kids/products/clothing/underwear.html",
+						"label": "Underwear",
+						"families": []
+					},
+					{
+						"group": "socks-tights",
+						"link": "/en_us/kids/products/clothing/socks-tights.html",
+						"label": "Socks & Tights",
+						"families": []
+					},
+					{
+						"group": "swimwear",
+						"link": "/en_us/kids/products/clothing/swimwear.html",
+						"label": "Swimwear",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "outerwear",
+				"link": "/en_us/kids/products/outerwear.html",
+				"label": "Outerwear",
+				"groups": [
+					{
+						"group": "jackets",
+						"link": "/en_us/kids/products/outerwear/jackets.html",
+						"label": "Jackets",
+						"families": []
+					},
+					{
+						"group": "coats",
+						"link": "/en_us/kids/products/outerwear/coats.html",
+						"label": "Coats",
+						"families": []
+					},
+					{
+						"group": "vests",
+						"link": "/en_us/kids/products/outerwear/vests.html",
+						"label": "Vests",
+						"families": []
+					},
+					{
+						"group": "snow-suits",
+						"link": "/en_us/kids/products/outerwear/snow-suits.html",
+						"label": "Snow Suits",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "accessories",
+				"link": "/en_us/kids/products/accessories.html",
+				"label": "Accessories",
+				"groups": [
+					{
+						"group": "hats",
+						"link": "/en_us/kids/products/accessories/hats.html",
+						"label": "Hats",
+						"families": []
+					},
+					{
+						"group": "scarves-gloves",
+						"link": "/en_us/kids/products/accessories/scarves-gloves.html",
+						"label": "Scarves & Gloves",
+						"families": []
+					},
+					{
+						"group": "bags",
+						"link": "/en_us/kids/products/accessories/bags.html",
+						"label": "Bags",
+						"families": []
+					},
+					{
+						"group": "belts-suspenders",
+						"link": "/en_us/kids/products/accessories/belts-suspenders.html",
+						"label": "Belts & Suspenders",
+						"families": []
+					},
+					{
+						"group": "hair-accessories",
+						"link": "/en_us/kids/products/accessories/hair-accessories.html",
+						"label": "Hair Accessories",
+						"families": []
+					},
+					{
+						"group": "jewelry",
+						"link": "/en_us/kids/products/accessories/jewelry.html",
+						"label": "Jewelry",
+						"families": []
+					},
+					{
+						"group": "sunglasses",
+						"link": "/en_us/kids/products/accessories/sunglasses.html",
+						"label": "Sunglasses",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "shoes",
+				"link": "/en_us/kids/products/shoes.html",
+				"label": "Shoes",
+				"groups": [
+					{
+						"group": "sneakers",
+						"link": "/en_us/kids/products/shoes/sneakers.html",
+						"label": "Sneakers",
+						"families": []
+					},
+					{
+						"group": "ballet-flats-and-pumps",
+						"link": "/en_us/kids/products/shoes/ballet-flats-and-pumps.html",
+						"label": "Ballet Flats & Pumps",
+						"families": []
+					},
+					{
+						"group": "boots",
+						"link": "/en_us/kids/products/shoes/boots.html",
+						"label": "Boots",
+						"families": []
+					},
+					{
+						"group": "rain-boots",
+						"link": "/en_us/kids/products/shoes/rain-boots.html",
+						"label": "Rain Boots",
+						"families": []
+					},
+					{
+						"group": "sandals-flip-flops",
+						"link": "/en_us/kids/products/shoes/sandals-flip-flops.html",
+						"label": "Sandals & Flip-Flops",
+						"families": []
+					},
+					{
+						"group": "slippers",
+						"link": "/en_us/kids/products/shoes/slippers.html",
+						"label": "Slippers",
+						"families": []
+					}
+				]
+			},
+			{
+				"category": "costumes",
+				"link": "/en_us/kids/products/costumes.html",
+				"label": "Costumes",
+				"groups": []
+			},
+			{
+				"category": "activewear",
+				"link": "/en_us/kids/products/activewear.html",
+				"label": "Sportswear",
+				"groups": []
+			}
+		]
+	}
+]

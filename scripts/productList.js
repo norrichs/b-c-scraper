@@ -6,12 +6,15 @@ const productList= [
 	{audience: "men", category: "suits-blazers", group: "waistcoats"},
 	{audience: "men", category: "suits-blazers", group: "sport-coats-jackets"},
 	{audience: "men", category: "suits-blazers", group: "suits"},
-	{audience: "men", category: "suits-blazers", group: "waistcoats"},
-	{audience: "men", category: "underwear", group: "briefs"}
+	{audience: "men", category: "underwear", group: "briefs"},
+	{audience: "kids", category: "outerwear", group: "jackets"},
+	{audience: "kids", category: "outerwear", group: "vests"},
+	{audience: "kids", category: "outerwear", group: "snowsuits"},
+	{audience: "kids", category: "clothing", group: "tops-t-shirts"}
 ]
 
 const testProductList = [
-	{audience: "men", category: "suits-blazers", group: "waistcoats"}
+	{audience: "kids", category: "clothing", group: "tops-t-shirts"}
 ]
 
 
