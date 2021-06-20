@@ -98,7 +98,7 @@ async function extractImageLinks(p) {
 				imageArray.push({ src: src0, filename: fileName0 });
 				imageArray.push({ src: src1, filename: fileName1 });
 				productDataArray.push({
-					a_c_g: `${p.audience}_${p.category}_${p.group}`,		// TODO sanitize for React routes target
+					a_c: `${p.audience}_${p.category}`,		// TODO sanitize for React routes target
 					images: [fileName0, fileName1],
 					altText: [alt0, alt1],
 					price_sale: 55, 				// TODO change from dummy data to scraped data
@@ -112,7 +112,8 @@ async function extractImageLinks(p) {
 					swatchColors: []						// TODO change from dummy data to scraped data
 				})
 				productPageLinkArray.push({
-					a_c_g: `${p.audience}_${p.category}_${p.group}`,		// TODO sanitize for React routes target
+					a_c: `${p.audience}_${p.category}`,		// TODO sanitize for React routes target
+					product_group: p.group,
 					product_family: alt1, 
 					url: product_family_URL})
 			});
